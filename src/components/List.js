@@ -12,7 +12,11 @@ function GroceryList() {
     setInput("");
   };
 
- 
+  const toggleCheck = (item) => {
+    setChecked((prev) => ({ ...prev, [item]: !prev[item] }));
+  };
+
+
 }
 
 export default GroceryList;
