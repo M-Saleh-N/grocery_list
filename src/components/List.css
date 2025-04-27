@@ -73,4 +73,18 @@ body {
     text-decoration: line-through;
     color: gray;
   }
+  .delete-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: auto;
+    transition: background-color 0.3s;
+  }
   
+  .delete-btn:hover {
+    background-color: #c0392b;
+  }  
