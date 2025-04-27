@@ -29,6 +29,18 @@ function GroceryList() {
         <button onClick={addItem}>Add</button>
       </div>
 
+      <ul>
+        {items.map((item, i) => (
+          <li key={i}>
+            <input
+              type="checkbox"
+              checked={!!checked[item]}
+              onChange={() => toggleCheck(item)}
+            />
+            <span className={checked[item] ? "checked" : ""}>{item}</span>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
