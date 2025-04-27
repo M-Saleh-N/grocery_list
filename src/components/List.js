@@ -16,7 +16,21 @@ function GroceryList() {
     setChecked((prev) => ({ ...prev, [item]: !prev[item] }));
   };
 
+  return (
+    <div className="grocery-container">
+      <h1>🛒 Grocery List</h1>
+      <div className="add-section">
+        <input
+          type="text"
+          placeholder="Add new item"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+        />
+        <button onClick={addItem}>Add</button>
+      </div>
 
+    </div>
+  );
 }
 
 export default GroceryList;
